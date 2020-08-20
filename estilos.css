@@ -1,0 +1,151 @@
+:root{
+    --violet: hsl(257, 40%, 49%)
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+body{
+    background: url('images/bg-mobile.svg')  no-repeat, var(--violet);
+    background-size: contain;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.wrapper{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo{
+    margin: 16px auto;
+    height: 35px;
+}
+
+.main{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    width: 303px;
+    text-align: center;
+    /* border: solid 1px blue; */
+    /* padding: 2.6em 0; */
+}
+
+.main img{
+    margin: 8px auto;
+    height: 195px;
+    /* width: 2; */
+    
+    /* height: 100%; */
+    /* border: 1px solid red; */
+    /* padding-bottom: 4em; */
+}
+
+.main__content{
+    margin-top: 40px;
+}
+
+.main p{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #FCF6FE;
+}
+
+.button{
+    width: 14em;
+    /* height: 2.5em; */
+    border-radius: 28px;
+    border: none;
+    margin: 0 auto;
+    background: white;
+    padding: 1em;
+    color: var(--violet);
+    /* border-bottom: 1px solid black; */
+}
+
+.social__list{
+    margin: 4em auto;
+    width: 310px;
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center
+}
+
+.social__item{
+    display: flex;
+    align-content: center;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 0.5em;
+}
+
+
+.hidden{
+    display: none;
+}
+
+@media screen and (min-width:1440px){
+    body{
+        background: url('images/bg-desktop.svg') no-repeat, var(--violet);
+        background-size: auto;
+        /* border: 1px solid red; */
+        /* background: #FCF6FE; */
+    }
+    .logo{
+        height: 50px;
+        width: 210px;
+        margin-top: 50px;
+        /* margin-left: 80px; */
+        /* width: 400px; */
+    }
+
+    .main{
+        flex-direction: row;
+        width: 100%;
+        /* border: 1px solid red; */
+        margin-top: 60px;
+    }
+    .main img{
+        height: 500px;
+        width: 700px;
+    }
+
+
+    .main__content{
+        width: 100%;
+        margin: 10px 50px;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .main__h1{
+        font-size: 40px;
+        font-weight: 700;
+        text-align: left
+    }
+    
+    .button{
+        margin-top: 15px;
+    }
+
+    .social__list{
+        align-content: space-between;
+        justify-content: flex-end;
+        width: 100%;
+        margin: 0;
+        /* border: 1px solid red; */
+    }
+}
